@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About Me — Sk Taufique Hossain</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:radial-gradient(circle at top,#0d1021 0%,#050810 100%);
+  color:#eaf8ff;
+  overflow-x:hidden;
+  min-height:100vh;
+  animation:fadeBody 1s ease-in-out forwards;
+  opacity:0;
+}
+@keyframes fadeBody{to{opacity:1}}
+nav{
+  position:fixed;
+  top:15px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  align-items:center;
+  gap:25px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  padding:10px 28px;
+  border-radius:20px;
+  z-index:1000;
+  box-shadow:0 0 15px rgba(124,77,255,0.4);
+}
+.logo{
+  font-size:28px;
+  font-weight:800;
+  color:#06f6d5;
+  text-shadow:0 0 15px #06f6d5,0 0 30px #7c4dff;
+  letter-spacing:1px;
+  cursor:default;
+  transition:.3s;
+}
+.logo:hover{
+  transform:scale(1.15);
+  text-shadow:0 0 25px #7c4dff,0 0 40px #06f6d5;
+}
+nav a{
+  color:#06f6d5;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+}
+nav a:hover{color:#7c4dff;text-shadow:0 0 10px #7c4dff}
+section{
+  padding:120px 25px 60px;
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+h1{
+  font-size:42px;
+  color:#06f6d5;
+  text-shadow:0 0 12px #06f6d5,0 0 20px #7c4dff;
+  margin-bottom:20px;
+}
+p{
+  line-height:1.8;
+  font-size:18px;
+  color:#d8e3f0;
+  text-align:justify;
+  margin-bottom:18px;
+  opacity:0;
+  transform:translateY(20px);
+  animation:fadeInText .8s ease forwards;
+}
+@keyframes fadeInText{to{opacity:1;transform:translateY(0)}}
+footer{
+  text-align:center;
+  color:#708aa0;
+  padding:30px 0 20px;
+  font-size:13px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">T</div>
+  <a href="index.html">Home</a>
+  <a href="services.html">Portfolio</a>
+  <a href="about.html">About Me</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+  <h1>About Me</h1>
+  <p>Hey, I’m <strong>Sk Taufique Hossain</strong> — a passionate web developer who loves turning ideas into stunning digital realities. I believe design should not just look good, it should *feel* good — smooth, fast, and full of energy.</p>
+
+  <p>From simple landing pages to creative portfolios, I always aim for perfection in both aesthetics and performance. Every project I create reflects a part of my personality — bold, confident, and always glowing with originality.</p>
+
+  <p>You’re currently seeing my personal website — it’s not just code, it’s my identity crafted in pixels. This space will keep evolving as I add my story, skills, goals, and the things I’ve learned along the way.</p>
+
+  <p>More content coming soon — I’m working on adding my journey, projects, tools I use, and what drives me forward 🚀</p>
+</section>
+
+<footer>© <span id="year"></span> Sk Taufique Hossain | Crafted with 💜</footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
