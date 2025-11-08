@@ -108,13 +108,40 @@ footer{
 }
 </style>
 </head>
-<body>
+<body> 
 <nav>
   <div class="logo">T</div>
   <a href="index.html">Home</a>
   <a href="services.html">Portfolio</a>
   <a href="about.html">About Me</a>
   <a href="contact.html">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Sk Taufique Hossain</h1>
+  <h2><span id="typing"></span></h2>
+  <a href="services.html" class="btn">Explore My Work</a>
+</section>
+
+<footer>© <span id="year"></span> Sk Taufique Hossain | Designed with 💜</footer>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=dboy2651222-cell&label=Visitors&color=00ffff&style=flat" alt="Vi>
+</div>
+
+<script>
+// Year
+document.getElementById("year").textContent=new Date().getFullYear();
+
+// Typing Effect
+const textArray = [
+  "A Passionate Web Developer",
+  "A Creative Designer",
+  "A Dreamer Who Turns Code Into Art",
+  "Your Next Favourite Website Builder 💻"
+];
+let typingElement=document.getElementById("typing");
+let i=0,j=0,typing=true;
 </nav>
 
 <section class="hero">
